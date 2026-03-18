@@ -20,13 +20,13 @@ create table compania(
 idcompania varchar (50) primary key, 
 nit varchar (20) unique not null,
 nombreCompania varchar (50) not null,
-fehcafundacion date null,
+fechafundacion date null,
 representantelegal varchar (50) not null);
 create table seguros(
 idseguro varchar (50) primary key,
  estado varchar (20) not null,
  costo double not null,
- fehcainicio date not null,
+ fechainicio date not null,
  fechaexpiracion date not null,
  valorasegurado double not null,
  idcompaniaFK varchar (50) not null,
@@ -51,3 +51,11 @@ idseguro varchar (50) primary key,
  heridos int null,
  fatalidades int null,
  automotores int not null);
+ 
+ alter table compania rename to companiaseguros;
+ alter table companiaseguros drop fehcafundacion;
+ alter table seguros drop foreign key idcompaniaFK;
+ alter table seguros
+ add constraint fkcompaniaseguros
+ foreign key (idcompaniaFK)
+ references companiaseguros(idcompania);
