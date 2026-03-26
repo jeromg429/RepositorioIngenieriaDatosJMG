@@ -157,19 +157,19 @@ SELECT * FROM productos WHERE nombreProducto LIKE 'm%';
 SELECT * FROM productos WHERE nombreProducto LIKE '%a%';
 SELECT * FROM productos WHERE nombreProducto LIKE '%b';
 
--- CLIENTES
 SET foreign_key_checks=0;
 LOAD DATA INFILE 'C:\\Users\\prestamour\\Documents\\GitHub\\RepositorioIngenieriaDatosJMG\\segundo corte\\sentencias y query\\data csv\\clientes.csv'
+IGNORE
 INTO TABLE clientes
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 SET foreign_key_checks=1;
 
-
 -- PRODUCTOS
 SET foreign_key_checks=0;
 LOAD DATA INFILE 'C:\\Users\\prestamour\\Documents\\GitHub\\RepositorioIngenieriaDatosJMG\\segundo corte\\sentencias y query\\data csv\\productos.csv'
+IGNORE
 INTO TABLE productos
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
@@ -178,7 +178,8 @@ SET foreign_key_checks=1;
 
 -- PEDIDOS
 SET foreign_key_checks=0;
-LOAD DATA INFILE "C:\Users\prestamour\Documents\GitHub\RepositorioIngenieriaDatosJMG\segundo corte\sentencias y query\data csv\pedido.csv"
+LOAD DATA INFILE 'C:\\Users\\prestamour\\Documents\\GitHub\\RepositorioIngenieriaDatosJMG\\segundo corte\\sentencias y query\\data csv\\pedido.csv'
+IGNORE
 INTO TABLE pedido
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
