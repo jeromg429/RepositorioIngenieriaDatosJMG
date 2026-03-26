@@ -1,51 +1,51 @@
-nombreCliente,emailCliente,ciudad
-Cliente1,cliente1@mail.com,Cartagena
-Cliente2,cliente2@mail.com,Barranquilla
-Cliente3,cliente3@mail.com,Barranquilla
-Cliente4,cliente4@mail.com,Cartagena
-Cliente5,cliente5@mail.com,Barranquilla
-Cliente6,cliente6@mail.com,Cartagena
-Cliente7,cliente7@mail.com,Medellin
-Cliente8,cliente8@mail.com,Bogota
-Cliente9,cliente9@mail.com,Cali
-Cliente10,cliente10@mail.com,Cartagena
-Cliente11,cliente11@mail.com,Barranquilla
-Cliente12,cliente12@mail.com,Cartagena
-Cliente13,cliente13@mail.com,Medellin
-Cliente14,cliente14@mail.com,Cartagena
-Cliente15,cliente15@mail.com,Bogota
-Cliente16,cliente16@mail.com,Bogota
-Cliente17,cliente17@mail.com,Medellin
-Cliente18,cliente18@mail.com,Cartagena
-Cliente19,cliente19@mail.com,Barranquilla
-Cliente20,cliente20@mail.com,Cali
-Cliente21,cliente21@mail.com,Barranquilla
-Cliente22,cliente22@mail.com,Barranquilla
-Cliente23,cliente23@mail.com,Cartagena
-Cliente24,cliente24@mail.com,Medellin
-Cliente25,cliente25@mail.com,Medellin
-Cliente26,cliente26@mail.com,Medellin
-Cliente27,cliente27@mail.com,Barranquilla
-Cliente28,cliente28@mail.com,Medellin
-Cliente29,cliente29@mail.com,Barranquilla
-Cliente30,cliente30@mail.com,Cartagena
-Cliente31,cliente31@mail.com,Barranquilla
-Cliente32,cliente32@mail.com,Cartagena
-Cliente33,cliente33@mail.com,Barranquilla
-Cliente34,cliente34@mail.com,Barranquilla
-Cliente35,cliente35@mail.com,Cali
-Cliente36,cliente36@mail.com,Cartagena
-Cliente37,cliente37@mail.com,Cartagena
-Cliente38,cliente38@mail.com,Medellin
-Cliente39,cliente39@mail.com,Cartagena
-Cliente40,cliente40@mail.com,Medellin
-Cliente41,cliente41@mail.com,Cali
-Cliente42,cliente42@mail.com,Bogota
-Cliente43,cliente43@mail.com,Cartagena
-Cliente44,cliente44@mail.com,Barranquilla
-Cliente45,cliente45@mail.com,Bogota
-Cliente46,cliente46@mail.com,Cartagena
-Cliente47,cliente47@mail.com,Medellin
-Cliente48,cliente48@mail.com,Cartagena
-Cliente49,cliente49@mail.com,Bogota
-Cliente50,cliente50@mail.com,Medellin
+idCliente,nombreCliente,emailCliente,ciudad,creado_en
+1,Ana García,ana@mail.com,Madrid,2026-01-05 10:23:00
+2,Pedro Pérez,pedro@mail.com,Barcelona,2026-01-07 09:10:00
+3,Laura Martínez,laura.martinez@mail.com,Valencia,2026-01-09 14:35:00
+4,Carlos López,carlos.lopez@mail.com,Sevilla,2026-01-10 11:00:00
+5,María Sánchez,maria.sanchez@mail.com,Zaragoza,2026-01-12 08:45:00
+6,Jorge Ramírez,jorge.ramirez@mail.com,Bilbao,2026-01-13 16:20:00
+7,Sofía Torres,sofia.torres@mail.com,Málaga,2026-01-15 13:10:00
+8,Andrés Gómez,andres.gomez@mail.com,Murcia,2026-01-17 10:55:00
+9,Valentina Ruiz,valentina.ruiz@mail.com,Alicante,2026-01-18 09:30:00
+10,Diego Herrera,diego.herrera@mail.com,Granada,2026-01-20 12:00:00
+11,Camila Flores,camila.flores@mail.com,Valladolid,2026-01-21 15:40:00
+12,Sebastián Díaz,sebastian.diaz@mail.com,Córdoba,2026-01-23 11:25:00
+13,Isabella Moreno,isabella.moreno@mail.com,Burgos,2026-01-25 08:15:00
+14,Mateo Jiménez,mateo.jimenez@mail.com,Palma,2026-01-26 14:00:00
+15,Lucía Álvarez,lucia.alvarez@mail.com,Las Palmas,2026-01-28 17:30:00
+16,Felipe Romero,felipe.romero@mail.com,Santa Cruz,2026-01-30 10:10:00
+17,Emma Navarro,emma.navarro@mail.com,Oviedo,2026-02-01 09:00:00
+18,Santiago Domínguez,santiago.dominguez@mail.com,Santander,2026-02-03 13:45:00
+19,Catalina Gil,catalina.gil@mail.com,Pamplona,2026-02-04 11:20:00
+20,Tomás Serrano,tomas.serrano@mail.com,Logroño,2026-02-06 15:05:00
+21,Natalia Blanco,natalia.blanco@mail.com,Salamanca,2026-02-08 08:50:00
+22,Alejandro Molina,alejandro.molina@mail.com,Cádiz,2026-02-10 12:35:00
+23,Daniela Castillo,daniela.castillo@mail.com,Huelva,2026-02-11 16:00:00
+24,Emilio Ortega,emilio.ortega@mail.com,León,2026-02-13 09:25:00
+25,Gabriela Guerrero,gabriela.guerrero@mail.com,Alicante,2026-02-14 14:10:00
+26,Nicolás Medina,nicolas.medina@mail.com,Tarragona,2026-02-16 10:40:00
+27,Paula Delgado,paula.delgado@mail.com,Girona,2026-02-17 13:00:00
+28,Ricardo Castro,ricardo.castro@mail.com,Lleida,2026-02-19 11:15:00
+29,Verónica Santos,veronica.santos@mail.com,Toledo,2026-02-20 08:30:00
+30,Manuel Guzmán,manuel.guzman@mail.com,Albacete,2026-02-22 15:55:00
+31,Elena Vargas,elena.vargas@mail.com,Badajoz,2026-02-23 12:20:00
+32,Cristian Mendoza,cristian.mendoza@mail.com,Cáceres,2026-02-25 09:45:00
+33,Adriana Iglesias,adriana.iglesias@mail.com,Mérida,2026-02-26 14:30:00
+34,Javier Rubio,javier.rubio@mail.com,Jaén,2026-02-28 10:05:00
+35,Patricia Fuentes,patricia.fuentes@mail.com,Almería,2026-03-01 16:50:00
+36,Marcos Peña,marcos.pena@mail.com,Elche,2026-03-03 11:40:00
+37,Rosa Campos,rosa.campos@mail.com,Cartagena,2026-03-04 08:10:00
+38,Hugo Vidal,hugo.vidal@mail.com,Jerez,2026-03-06 13:25:00
+39,Sara Ramos,sara.ramos@mail.com,Sabadell,2026-03-07 15:00:00
+40,Esteban Suárez,esteban.suarez@mail.com,Fuenlabrada,2026-03-09 09:35:00
+41,Lorena Vega,lorena.vega@mail.com,Alcalá,2026-03-10 12:50:00
+42,Oscar Reyes,oscar.reyes@mail.com,Leganés,2026-03-12 10:15:00
+43,Miriam León,miriam.leon@mail.com,Getafe,2026-03-13 14:40:00
+44,Iván Mora,ivan.mora@mail.com,Hospitalet,2026-03-15 08:00:00
+45,Rebeca Cortés,rebeca.cortes@mail.com,Badalona,2026-03-16 16:30:00
+46,Francisco Núñez,francisco.nunez@mail.com,Vitoria,2026-03-18 11:05:00
+47,Nuria Cabrera,nuria.cabrera@mail.com,San Sebastián,2026-03-19 13:20:00
+48,Álvaro Aguilar,alvaro.aguilar@mail.com,Castellón,2026-03-21 09:55:00
+49,Beatriz Prieto,beatriz.prieto@mail.com,Burgos,2026-03-22 15:10:00
+50,Raúl Herrero,raul.herrero@mail.com,Zaragoza,2026-03-24 10:45:00

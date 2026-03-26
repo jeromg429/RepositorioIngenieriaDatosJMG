@@ -19,6 +19,9 @@ USE tiendaOnline;
 -- REINICIAR
 DROP DATABASE tiendaOnline;
 
+-- CONFIGURACIÓN MODO SEGURO
+SET SQL_SAFE_UPDATES = 0;
+
 -- TABLAS
 CREATE TABLE clientes(
 idCliente INT PRIMARY KEY AUTO_INCREMENT,
@@ -31,7 +34,7 @@ creado_en DATETIME DEFAULT NOW()
 CREATE TABLE productos(
 idProducto INT PRIMARY KEY AUTO_INCREMENT,
 nombreProducto VARCHAR(120) NOT NULL,
-precioProducto DECIMAL(10,2),
+precioProducto DOUBLE,
 stockProducto INT DEFAULT 0,
 categoriaProducto VARCHAR(60)
 );
@@ -46,7 +49,6 @@ FOREIGN KEY (idClienteFK) REFERENCES clientes(idCliente),
 FOREIGN KEY (idProductoFK) REFERENCES productos(idProducto)
 );
 
--- 🔴 CORREGIDO: nombre consistente
 CREATE TABLE cliente_backup (
 idClienBack INT PRIMARY KEY AUTO_INCREMENT,
 nombreCliente VARCHAR(100),
@@ -82,7 +84,7 @@ VALUES
 
 SELECT * FROM productos;
 
--- BACKUP (orden corregido)
+-- BACKUP
 INSERT INTO cliente_backup (nombreCliente,emailCliente)
 SELECT nombreCliente,emailCliente
 FROM clientes
@@ -121,9 +123,6 @@ SELECT * FROM productos;
 DELETE FROM productos
 WHERE stockProducto=0 AND categoriaProducto='Descatalogado';
 
--- CONFIGURACIÓN
-SET SQL_SAFE_UPDATES = 0;
-
 -- ALTER
 ALTER TABLE productos CHANGE stockProducto stoProdT INT(11);
 
@@ -159,25 +158,32 @@ SELECT * FROM productos WHERE nombreProducto LIKE '%a%';
 SELECT * FROM productos WHERE nombreProducto LIKE '%b';
 
 -- CLIENTES
-LOAD DATA INFILE 'C:\Users\jermu\Downloads\RepositorioIngenieriaDatosJMG\segundo corte\sentencias y query\data csv\clientes.csv'
+SET foreign_key_checks=0;
+LOAD DATA INFILE 'C:\\Users\\prestamour\\Documents\\GitHub\\RepositorioIngenieriaDatosJMG\\segundo corte\\sentencias y query\\data csv\\clientes.csv'
 INTO TABLE clientes
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
+SET foreign_key_checks=1;
+
 
 -- PRODUCTOS
-LOAD DATA INFILE 'C:\Users\jermu\Downloads\RepositorioIngenieriaDatosJMG\segundo corte\sentencias y query\data csv\productos.csv'
+SET foreign_key_checks=0;
+LOAD DATA INFILE 'C:\\Users\\prestamour\\Documents\\GitHub\\RepositorioIngenieriaDatosJMG\\segundo corte\\sentencias y query\\data csv\\productos.csv'
 INTO TABLE productos
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
+SET foreign_key_checks=1;
 
 -- PEDIDOS
-LOAD DATA INFILE "C:\Users\jermu\Downloads\RepositorioIngenieriaDatosJMG\segundo corte\sentencias y query\data csv\pedido.csv"
+SET foreign_key_checks=0;
+LOAD DATA INFILE "C:\Users\prestamour\Documents\GitHub\RepositorioIngenieriaDatosJMG\segundo corte\sentencias y query\data csv\pedido.csv"
 INTO TABLE pedido
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
+SET foreign_key_checks=1;
 
 -- ACTIVAR
 SET GLOBAL local_infile = 1;
@@ -195,3 +201,12 @@ SELECT CONCAT(nombreCliente, ' - ', ciudad) AS cliente_info FROM clientes;
 
 -- LENGTH
 SELECT nombreCliente, LENGTH(nombreCliente) AS longitud FROM clientes;
+
+### EJ CONSULTA SUBCONSULTA
+-- Mostrar los nombres de los clientes que han realizado al menos un pedido
+### EJ CONSULTA MULTITABLA
+-- Mostrar el nombre del cliente, el nombre del producto y la cantidad de productos pedidos
+
+/* AGRUPAR GROUP BY SELECT camposConsultar FROM nombreTabla, GROUP BY campo Agrupar*/
+
+describe clientes;

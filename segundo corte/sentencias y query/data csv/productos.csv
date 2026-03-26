@@ -1,51 +1,51 @@
-nombreProducto,precioProducto,stockProducto,categoriaProducto
-Producto1,358920,40,Accesorios
-Producto2,1927678,65,Hogar
-Producto3,1211710,51,Accesorios
-Producto4,637922,59,Accesorios
-Producto5,91365,96,Hogar
-Producto6,1121514,13,Deportes
-Producto7,419092,19,Hogar
-Producto8,1176856,80,Hogar
-Producto9,1277143,31,Hogar
-Producto10,313202,89,Accesorios
-Producto11,14964,44,Electronica
-Producto12,97144,45,Accesorios
-Producto13,310788,9,Deportes
-Producto14,1120102,19,Electronica
-Producto15,1729720,88,Accesorios
-Producto16,1967110,10,Electronica
-Producto17,1655371,49,Electronica
-Producto18,1018367,31,Hogar
-Producto19,272617,49,Accesorios
-Producto20,1463880,95,Deportes
-Producto21,1159033,74,Electronica
-Producto22,814230,78,Accesorios
-Producto23,1401440,13,Accesorios
-Producto24,1344597,96,Hogar
-Producto25,343212,69,Electronica
-Producto26,496231,21,Deportes
-Producto27,370046,2,Hogar
-Producto28,821267,49,Electronica
-Producto29,1004230,67,Accesorios
-Producto30,239513,53,Deportes
-Producto31,1388301,56,Electronica
-Producto32,650331,41,Hogar
-Producto33,95858,40,Deportes
-Producto34,1395306,97,Deportes
-Producto35,1991901,63,Electronica
-Producto36,1708903,32,Hogar
-Producto37,599035,83,Accesorios
-Producto38,1236266,6,Accesorios
-Producto39,1413116,77,Accesorios
-Producto40,79506,48,Deportes
-Producto41,1241757,78,Electronica
-Producto42,564171,59,Hogar
-Producto43,303783,29,Accesorios
-Producto44,741004,90,Deportes
-Producto45,1984756,18,Electronica
-Producto46,378464,74,Hogar
-Producto47,512600,31,Electronica
-Producto48,1627382,36,Electronica
-Producto49,734782,83,Hogar
-Producto50,367917,65,Electronica
+idProducto,nombreProducto,precioProducto,stockProducto,categoriaProducto
+1,Laptop Pro,1200000,15,Electrónica
+2,Mouse USB,50000,80,Accesorios
+3,Monitor 32",500000,20,Electrónica
+4,Teclado Mecánico,100000,35,Accesorios
+5,Auriculares Bluetooth,180000,45,Audio
+6,Webcam HD,120000,30,Accesorios
+7,Tablet 10",650000,25,Electrónica
+8,Smartphone Samsung,900000,18,Electrónica
+9,Cargador Rápido,55000,70,Accesorios
+10,Memoria USB 64GB,40000,100,Almacenamiento
+11,Disco Duro Externo 1TB,250000,22,Almacenamiento
+12,SSD 500GB,300000,17,Almacenamiento
+13,Router WiFi 6,220000,14,Redes
+14,Switch 8 Puertos,130000,12,Redes
+15,Cable HDMI 2m,25000,90,Cables
+16,Hub USB-C,95000,40,Accesorios
+17,Soporte Laptop,75000,28,Accesorios
+18,Mochila Portátil,140000,33,Accesorios
+19,Impresora Multifuncional,420000,10,Electrónica
+20,Tinta Negra HP,45000,60,Consumibles
+21,Tinta Color HP,55000,55,Consumibles
+22,Papel A4 500 hojas,18000,80,Consumibles
+23,Ups 600VA,310000,8,Energía
+24,Regulador de Voltaje,85000,15,Energía
+25,Adaptador HDMI-VGA,35000,50,Cables
+26,Cable USB-C 1m,20000,100,Cables
+27,Mousepad XL,42000,45,Accesorios
+28,Ventilador Portátil,38000,60,Accesorios
+29,Altavoz Bluetooth,160000,27,Audio
+30,Micrófono USB,195000,20,Audio
+31,Smart TV 43",1350000,9,Electrónica
+32,Consola PS5,2500000,5,Gaming
+33,Control PS5,300000,12,Gaming
+34,Auriculares Gaming,210000,18,Gaming
+35,Silla Ergonómica,780000,7,Mobiliario
+36,Escritorio Plegable,450000,6,Mobiliario
+37,Lámpara LED Escritorio,65000,35,Iluminación
+38,Batería Portátil 20000mAh,130000,25,Energía
+39,Lector de Tarjetas,28000,55,Accesorios
+40,Proyector Portátil,870000,4,Electrónica
+41,Funda Laptop 15",48000,40,Accesorios
+42,Limpiador Pantalla,15000,70,Consumibles
+43,Pad de Carga Inalámbrica,75000,30,Accesorios
+44,Teclado Bluetooth,125000,22,Accesorios
+45,Mouse Vertical Ergonómico,95000,18,Accesorios
+46,Capturador de Video HDMI,280000,10,Electrónica
+47,Adaptador USB WiFi,60000,38,Redes
+48,Cable Ethernet Cat6 3m,22000,65,Cables
+49,Tarjeta de Memoria 128GB,70000,50,Almacenamiento
+50,Antivirus Licencia 1 año,120000,100,Software
