@@ -1,0 +1,215 @@
+// Crear la base de datos
+
+// Había cosas que no encontré info entonces todo lo que dice 11-11 en fecha es por eso
+// La duración está en segundos
+
+use musicDB;
+
+// 1-3. Agregar 5 bandas a la base de datos (con álbum y canciones)
+
+// Inserción de bandas y canciones
+
+// Banda 1: Lovejoy
+db.bands.insertOne({
+    name: "Lovejoy",
+    country: "UK",
+    url: "www.lovejoy.com",
+    albums: [
+        {
+            title: "One Simple Trick",
+            dateCreated: new Date("2023-11-11"),
+            songs: [
+                { titleSong: "Pay N Display", duration: 210, author: ["Lovejoy"] },
+                { titleSong: "Perfect Blue", duration: 195, author: ["Lovejoy"] },
+                { titleSong: "Scoundrels", duration: 220, author: ["Lovejoy"] },
+                { titleSong: "Foxholes", duration: 205, author: ["Lovejoy"] },
+                { titleSong: "Monochrome", duration: 215, author: ["Lovejoy"] }
+            ]
+        },
+        {
+            title: "Pebble Rain",
+            dateCreated: new Date("2021-11-11"),
+            songs: [
+                { titleSong: "Perfume", duration: 200, author: ["Lovejoy"] },
+                { titleSong: "Concrete", duration: 190, author: ["Lovejoy"] },
+                { titleSong: "The Fall", duration: 225, author: ["Lovejoy"] },
+                { titleSong: "Model Buses", duration: 210, author: ["Lovejoy"] },
+                { titleSong: "Its All Futile Its All Pointless", duration: 240, author: ["Lovejoy"] }
+            ]
+        }
+    ]
+});
+
+// Banda 2: Mitski
+db.bands.insertOne({
+    name: "Mitski",
+    country: "USA",
+    url: "www.mitski.com",
+    albums: [
+        {
+            title: "Be the Cowboy",
+            dateCreated: new Date("2018-08-17"),
+            songs: [
+                { titleSong: "Geyser", duration: 120, author: ["Mitski"] },
+                { titleSong: "Why Didn't You Stop Me?", duration: 130, author: ["Mitski"] },
+                { titleSong: "Old Friend", duration: 115, author: ["Mitski"] },
+                { titleSong: "A Pearl", duration: 140, author: ["Mitski"] },
+                { titleSong: "Washing Machine Heart", duration: 125, author: ["Mitski"] }
+            ]
+        },
+        {
+            title: "Laurel Hell",
+            dateCreated: new Date("2022-02-04"),
+            songs: [
+                { titleSong: "Valentine, Texas", duration: 150, author: ["Mitski"] },
+                { titleSong: "Working for the Knife", duration: 135, author: ["Mitski"] },
+                { titleSong: "Stay Soft", duration: 145, author: ["Mitski"] },
+                { titleSong: "Everyone", duration: 130, author: ["Mitski"] },
+                { titleSong: "Heat Lightning", duration: 140, author: ["Mitski"] }
+            ]
+        }
+    ]
+});
+
+// Banda 3: Panic! at the Disco
+db.bands.insertOne({
+    name: "Panic! at the Disco",
+    country: "USA",
+    url: "www.panicatthedisco.com",
+    albums: [
+        {
+            title: "A Fever You Can't Sweat Out",
+            dateCreated: new Date("2005-09-27"),
+            songs: [
+                { titleSong: "The Only Difference", duration: 170, author: ["Panic! at the Disco"] },
+                { titleSong: "I Write Sins Not Tragedies", duration: 195, author: ["Panic! at the Disco"] },
+                { titleSong: "But It's Better If You Do", duration: 190, author: ["Panic! at the Disco"] },
+                { titleSong: "Lying Is the Most Fun", duration: 210, author: ["Panic! at the Disco"] },
+                { titleSong: "Build God, Then We'll Talk", duration: 215, author: ["Panic! at the Disco"] }
+            ]
+        },
+        {
+            title: "Death of a Bachelor",
+            dateCreated: new Date("2016-01-15"),
+            songs: [
+                { titleSong: "Victorious", duration: 170, author: ["Panic! at the Disco"] },
+                { titleSong: "Don't Threaten Me", duration: 195, author: ["Panic! at the Disco"] },
+                { titleSong: "Emperor's New Clothes", duration: 190, author: ["Panic! at the Disco"] },
+                { titleSong: "Death of a Bachelor", duration: 210, author: ["Panic! at the Disco"] },
+                { titleSong: "Crazy = Genius", duration: 180, author: ["Panic! at the Disco"] }
+            ]
+        }
+    ]
+});
+
+// Banda 4: Will Wood
+db.bands.insertOne({
+    name: "Will Wood",
+    country: "USA",
+    url: "www.willwood.com",
+    albums: [
+        {
+            title: "The Normal Album",
+            dateCreated: new Date("2020-07-10"),
+            songs: [
+                { titleSong: "Suburbia Overture", duration: 240, author: ["Will Wood"] },
+                { titleSong: "2econd 2ight 2eer", duration: 210, author: ["Will Wood"] },
+                { titleSong: "Laplace's Angel", duration: 225, author: ["Will Wood"] },
+                { titleSong: "I / Me / Myself", duration: 260, author: ["Will Wood"] },
+                { titleSong: "Love, Me Normally", duration: 230, author: ["Will Wood"] }
+            ]
+        },
+        {
+            title: "Self-Ish",
+            dateCreated: new Date("2016-11-11"),
+            songs: [
+                { titleSong: "Self-", duration: 180, author: ["Will Wood"] },
+                { titleSong: "2012", duration: 250, author: ["Will Wood"] },
+                { titleSong: "Cotard's Solution", duration: 240, author: ["Will Wood"] },
+                { titleSong: "Mr. Capgras", duration: 220, author: ["Will Wood"] },
+                { titleSong: "Dr. Sunshine Is Dead", duration: 280, author: ["Will Wood"] }
+            ]
+        }
+    ]
+});
+
+// Banda 5: I DONT KNOW HOW BUT THEY FOUND ME (idkhbtfm)
+db.bands.insertOne({
+    name: "I DONT KNOW HOW BUT THEY FOUND ME",
+    country: "USA",
+    url: "www.idkhow.com",
+    albums: [
+        {
+            title: "Razzmatazz",
+            dateCreated: new Date("2020-10-23"),
+            songs: [
+                { titleSong: "Leave Me Alone", duration: 185, author: ["IDKHBTFM"] },
+                { titleSong: "New Invention", duration: 200, author: ["IDKHBTFM"] },
+                { titleSong: "From the Gallows", duration: 190, author: ["IDKHBTFM"] },
+                { titleSong: "Clusterhug", duration: 175, author: ["IDKHBTFM"] },
+                { titleSong: "Razzmatazz", duration: 220, author: ["IDKHBTFM"] }
+            ]
+        },
+        {
+            title: "1981 Extended Play",
+            dateCreated: new Date("2018-11-11"),
+            songs: [
+                { titleSong: "Modern Day Cain", duration: 180, author: ["IDKHBTFM"] },
+                { titleSong: "Nobody Likes the Opening Band", duration: 195, author: ["IDKHBTFM"] },
+                { titleSong: "Social Climb", duration: 190, author: ["IDKHBTFM"] },
+                { titleSong: "Bleed Magic", duration: 210, author: ["IDKHBTFM"] },
+                { titleSong: "Choke", duration: 185, author: ["IDKHBTFM"] }
+            ]
+        }
+    ]
+});
+
+// Banda 6: Penelope Scott
+db.bands.insertOne({
+    name: "Penelope Scott",
+    country: "USA",
+    url: "www.penelopescott.com",
+    albums: [
+        {
+            title: "Public Void",
+            dateCreated: new Date("2020-09-25"),
+            songs: [
+                { titleSong: "Sweet Hibiscus Tea", duration: 210, author: ["Penelope Scott"] },
+                { titleSong: "Rät", duration: 195, author: ["Penelope Scott"] },
+                { titleSong: "Cigarette Ahegao", duration: 180, author: ["Penelope Scott"] },
+                { titleSong: "Lavender Scrub", duration: 185, author: ["Penelope Scott"] },
+                { titleSong: "Montreal", duration: 200, author: ["Penelope Scott"] }
+            ]
+        },
+        {
+            title: "Hazards",
+            dateCreated: new Date("2019-11-11"),
+            songs: [
+                { titleSong: "Self Care", duration: 220, author: ["Penelope Scott"] },
+                { titleSong: "American Healthcare", duration: 190, author: ["Penelope Scott"] },
+                { titleSong: "Feel Better", duration: 175, author: ["Penelope Scott"] },
+                { titleSong: "Gross", duration: 185, author: ["Penelope Scott"] },
+                { titleSong: "Lottery", duration: 200, author: ["Penelope Scott"] }
+            ]
+        }
+    ]
+});
+
+
+// 4. Mostrar cada banda completa
+print("\n=== 4. Bandas completas con su discografía ===");
+db.bands.find().pretty();
+
+// 5. Borrar un campo del subdocumento albums
+// Borrando duration del subdoc songs en Lovejoy
+db.bands.updateOne(
+    { name: "Lovejoy", "albums.title": "One Simple Trick" },
+    { $unset: { "albums.$[album].songs.$[].duration": "" } },
+    { arrayFilters: [{ "album.title": "One Simple Trick" }] }
+);
+
+// 6. Borrar todo el subdocumento songs de uno de los albums de una banda (a elección)
+// Ejemplo: Borrar el subdocumento songs del álbum 'Razzmatazz' de IDKHBTFM
+db.bands.updateOne(
+    { name: "I DONT KNOW HOW BUT THEY FOUND ME", "albums.title": "Razzmatazz" },
+    { $unset: { "albums.$.songs": "" } }
